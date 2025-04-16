@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO-LIST</title>
+
+    <!-- js link  -->
+    <script src="assets/js/script.js" defer></script>
+
+    <!-- bootstrap css and js cdn  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-dark text-light">
+    <main>
+      <section>
+        <div class="container">
+            <div class="row justify-content-center p-4">
+                <p class="h4 text-center text-uppercase fw-bold">Todo-list <span class="text-warning">(with localstorage)</span></p>
+                <div class="col-md-6 p-4">
+                    <form class="form-control p-4 border-3 bg-dark text-light border-dark">
+                        <div class="mb-3">
+                          <input type="text" class="form-control border-dark border-2 shadow-none rounded-pill" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-control rounded-pill" id="submit">Submit</button>
+                        <button type="submit" class="btn btn-warning form-control rounded-pill" id="update">Update</button>
+                      </form>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <table class="table table-bordered text-center table-dark table-striped table-hover">
+                        <thead>
+                          <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                           
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
